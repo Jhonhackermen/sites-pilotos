@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Clínica Médica Dr. João - Atendimento humanizado em Petrolina"/>
+  <title>Dr. João Silva | Clínica de Excelência</title>
+
+  <!-- FONTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+  <!-- PARTICULAS DE FUNDO -->
+  <div id="particles-js"></div>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <i class="fas fa-heartbeat"></i>
+        <h1>Dr. João Silva</h1>
+      </div>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#agendamento">Agendar</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Seu Cuidado, Nossa Prioridade</h2>
+      <p>Atendimento médico humanizado com tecnologia de ponta em Petrolina</p>
+      <a href="#agendamento" class="btn pulse">Agende Agora</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <i class="fas fa-user-md fa-3x icon"></i>
+          <h3>Experiência</h3>
+          <p>Mais de 15 anos cuidando da saúde da família petrolinense.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-hospital fa-3x icon"></i>
+          <h3>Estrutura</h3>
+          <p>Consultórios modernos e exames no mesmo local.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-clock fa-3x icon"></i>
+          <h3>Horários</h3>
+          <p>Segunda a Sábado, das 7h às 21h.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="grid">
+        <div class="card service-card" data-service="Clínica Geral">
+          <i class="fas fa-stethoscope"></i>
+          <h3>Clínica Geral</h3>
+          <p>Consultas, check-up, prevenção</p>
+        </div>
+        <div class="card service-card" data-service="Pediatria">
+          <i class="fas fa-baby"></i>
+          <h3>Pediatria</h3>
+          <p>Acompanhamento infantil completo</p>
+        </div>
+        <div class="card service-card" data-service="Exames">
+          <i class="fas fa-vial"></i>
+          <h3>Exames Laboratoriais</h3>
+          <p>Resultados em até 24h</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="agendamento" class="form-section">
+    <div class="container">
+      <h2>Agende Sua Consulta</h2>
+      <form id="agendamento-form" class="form-glass">
+        <input type="text" placeholder="Nome completo" required />
+        <input type="tel" placeholder="WhatsApp (31 99246-8975)" required />
+        <input type="date" required />
+        <select required id="servico-select">
+          <option value="">Escolha o serviço</option>
+          <option>Clínica Geral</option>
+          <option>Pediatria</option>
+          <option>Exames</option>
+        </select>
+        <button type="submit">
+          <i class="fas fa-paper-plane"></i> Enviar Agendamento
+        </button>
+      </form>
+      <p id="status"></p>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Localização</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Av. Guararapes, 1000 - Centro, Petrolina-PE</p>
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <p><i class="fas fa-phone"></i> (87) 98877-6655</p>
+          <p><i class="fab fa-whatsapp"></i> 31 99246-8975</p>
+        </div>
+        <div>
+          <h3>Redes</h3>
+          <p><i class="fab fa-instagram"></i> @drjoaosilva</p>
+        </div>
+      </div>
+      <p class="copy">&copy; 2025 Clínica Dr. João Silva. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- PARTICULAS -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
