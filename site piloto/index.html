@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Clínica Médica Dr. João - Atendimento humanizado em Petrolina"/>
+  <title>Clínica Dr. João | Saúde com Cuidado</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Dr. João Silva</h1>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#agendamento">Agendar</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Atendimento Humanizado em Petrolina</h2>
+      <p>Clínica geral, pediatria e exames laboratoriais</p>
+      <a href="#agendamento" class="btn">Agende sua Consulta</a>
+    </div>
+  </section>
+
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="grid">
+        <div class="card">Clínica Geral</div>
+        <div class="card">Pediatria</div>
+        <div class="card">Exames Laboratoriais</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="agendamento" class="form-section">
+    <div class="container">
+      <h2>Agende sua Consulta</h2>
+      <form id="agendamento-form">
+        <input type="text" placeholder="Nome completo" required />
+        <input type="tel" placeholder="WhatsApp (31 99246-8975)" required />
+        <input type="date" required />
+        <select required>
+          <option value="">Escolha o serviço</option>
+          <option>Clínica Geral</option>
+          <option>Pediatria</option>
+          <option>Exames</option>
+        </select>
+        <button type="submit">Enviar Agendamento</button>
+      </form>
+      <p id="status"></p>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <div class="container">
+      <p>📍 Av. Guararapes, 1000 - Centro, Petrolina-PE</p>
+      <p>📞 (87) 98877-6655 | WhatsApp: 31 99246-8975</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
